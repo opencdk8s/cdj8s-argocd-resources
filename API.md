@@ -10437,6 +10437,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
+**chart**?🔹 | <code>string</code> | __*Optional*__
 **directory**?🔹 | <code>[ApplicationDirectory](#opencdk8s-cdk8s-argocd-resources-applicationdirectory)</code> | __*Optional*__
 **helm**?🔹 | <code>[HelmOptions](#opencdk8s-cdk8s-argocd-resources-helmoptions)</code> | __*Optional*__
 **path**?🔹 | <code>string</code> | __*Optional*__
@@ -10536,7 +10537,6 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**chart**?🔹 | <code>string</code> | __*Optional*__
 **force**?🔹 | <code>boolean</code> | __*Optional*__
 **helmOptions**?🔹 | <code>Array<string></code> | __*Optional*__
 **helmVersion**?🔹 | <code>string</code> | __*Optional*__
