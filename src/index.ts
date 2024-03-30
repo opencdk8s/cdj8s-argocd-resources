@@ -5,11 +5,13 @@ export * as k8s from './imports/k8s';
 
 export interface ApplicationSource {
   readonly repoURL?: string;
+  readonly chart?: string;
   readonly targetRevision?: string;
   readonly path?: string;
   readonly directory?: ApplicationDirectory;
   readonly plugin?: ApplicationPlugin;
   readonly helm?: HelmOptions;
+  readonly ref?: string;
 
 }
 
@@ -54,6 +56,7 @@ export interface ApplicationSyncPolicy {
 export interface ArgoCdApplicationSpec {
   readonly project?: string;
   readonly source?: ApplicationSource;
+  readonly sources?: ApplicationSource[];
   readonly destination?: ApplicationDestination;
   readonly syncPolicy?: ApplicationSyncPolicy;
   readonly ignoreDifferences?: ResourceIgnoreDifferences[];
@@ -63,7 +66,6 @@ export interface HelmOptions {
   readonly valueFiles?: string[];
   readonly values?: { [key: string]: string };
   readonly releaseName?: string;
-  readonly chart?: string;
   readonly version?: string;
   readonly repo?: string;
   readonly targetRevision?: string;

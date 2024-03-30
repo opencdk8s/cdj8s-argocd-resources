@@ -10437,10 +10437,12 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
+**chart**?🔹 | <code>string</code> | __*Optional*__
 **directory**?🔹 | <code>[ApplicationDirectory](#opencdk8s-cdk8s-argocd-resources-applicationdirectory)</code> | __*Optional*__
 **helm**?🔹 | <code>[HelmOptions](#opencdk8s-cdk8s-argocd-resources-helmoptions)</code> | __*Optional*__
 **path**?🔹 | <code>string</code> | __*Optional*__
 **plugin**?🔹 | <code>[ApplicationPlugin](#opencdk8s-cdk8s-argocd-resources-applicationplugin)</code> | __*Optional*__
+**ref**?🔹 | <code>string</code> | __*Optional*__
 **repoURL**?🔹 | <code>string</code> | __*Optional*__
 **targetRevision**?🔹 | <code>string</code> | __*Optional*__
 
@@ -10488,6 +10490,7 @@ Name | Type | Description
 **ignoreDifferences**?🔹 | <code>Array<[ResourceIgnoreDifferences](#opencdk8s-cdk8s-argocd-resources-resourceignoredifferences)></code> | __*Optional*__
 **project**?🔹 | <code>string</code> | __*Optional*__
 **source**?🔹 | <code>[ApplicationSource](#opencdk8s-cdk8s-argocd-resources-applicationsource)</code> | __*Optional*__
+**sources**?🔹 | <code>Array<[ApplicationSource](#opencdk8s-cdk8s-argocd-resources-applicationsource)></code> | __*Optional*__
 **syncPolicy**?🔹 | <code>[ApplicationSyncPolicy](#opencdk8s-cdk8s-argocd-resources-applicationsyncpolicy)</code> | __*Optional*__
 
 
@@ -10534,7 +10537,6 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**chart**?🔹 | <code>string</code> | __*Optional*__
 **force**?🔹 | <code>boolean</code> | __*Optional*__
 **helmOptions**?🔹 | <code>Array<string></code> | __*Optional*__
 **helmVersion**?🔹 | <code>string</code> | __*Optional*__
